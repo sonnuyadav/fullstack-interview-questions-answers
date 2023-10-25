@@ -7,4 +7,4 @@ const capitilizeEachWords = (str) => {
     return allWords.join(" ");
 }
 
-console.log(capitilizeEachWords(temStr));
+console.log(capitilizeEachWords(temStr)); //Hi How Are You

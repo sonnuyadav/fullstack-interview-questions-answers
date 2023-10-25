@@ -13,4 +13,4 @@ const shuffleArray = (arr) =>{
     return arr;
 }
 
-console.log(shuffleArray([11,2,3,4,5,6]));
+console.log(shuffleArray([11,2,3,4,5,6])); //[ 11, 11, 2, 2, 11, 3 ]

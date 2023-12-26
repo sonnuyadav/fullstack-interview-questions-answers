@@ -9,6 +9,21 @@ const charOcc = (str) =>{
     });
     return objOccrences;
 }
-const tempStr = 'Geeta';
+const tempStr = 'Hello World';
 
 console.log(charOcc(tempStr));
+
+
+// using for of loop
+
+const string = "Hello World";
+const obj = {};
+for(let x of string){
+    if(obj[x]){
+        obj[x] +=1;
+    }else{
+        obj[x] = 1;
+    }
+}
+
+console.log(obj);

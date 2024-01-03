@@ -3,7 +3,6 @@ var mostFrequnet = null,mostFrequnetItem ;
 var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 arr1.sort();
 
-
 for (var i=0;i<arr1.length;i++){ 
 
      var single = arr1[i]; 

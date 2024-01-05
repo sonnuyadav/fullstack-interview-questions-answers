@@ -1,5 +1,4 @@
 const arr = [0,0,0,1,2,1];
-
 //console.log(arr.sort());
 
 function getSort(array) {

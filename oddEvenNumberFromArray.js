@@ -1,4 +1,6 @@
 function getArrayPushValueInNewArray(arr){
+    //if need sorting asending order
+    arr.sort((a,b) => a - b);
     const evenArray = [];
     const oddArray  = [];
     for (let i = 0; i < arr.length; i++) {

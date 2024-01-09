@@ -22,18 +22,13 @@ function flattenArray(arr) {
   console.log(flatArray);
   // Output: [1, 2, 3, 4, 5, 6, 7, 8]
 
-
-
   //Using flat() Method
-
   const nestedArrays1 = [[1, 2, [3]], [4, [5, 6]], [7, 8]];
-
 // Using flat with Infinity to recursively flatten all nested arrays
 const flatArray1 = nestedArrays.flat(Infinity);
 
 console.log(flatArray1);
 // Output: [1, 2, 3, 4, 5, 6, 7, 8]
-
 //Using reduce method
  const flatArrayReduce = nestedArrays.reduce((accumulator, currentArray) => {
   return accumulator.concat(Array.isArray(currentArray) ? flattenArray(currentArray) : currentArray);

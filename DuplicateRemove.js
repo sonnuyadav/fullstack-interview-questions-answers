@@ -15,7 +15,7 @@ const removeDuplicate = (arr) =>{
   return outArr;
 }
 
-//console.log(removeDuplicate(arr));
+console.log(removeDuplicate(arr));
 
 //Another way with ES6
 const filteredArray = arr.filter((value, index, array) => 

@@ -1,23 +1,17 @@
-function isValidParentheses(s) {
+var isValidParentheses = function(str) {
     const stack = [];
-    const openingBrackets = ['(', '{', '['];
-    const closingBrackets = [')', '}', ']'];
-    
-    for (let i = 0; i < s.length; i++) {
-      const currentBracket = s[i];
-      if (openingBrackets.includes(currentBracket)) {
-        stack.push(currentBracket);
-      } else if (closingBrackets.includes(currentBracket)) {
-        const lastOpeningBracket = stack.pop();
-        if (!lastOpeningBracket || 
-            openingBrackets.indexOf(lastOpeningBracket) !== closingBrackets.indexOf(currentBracket)) {
+    const characters = { ')': '(', '}': '{', ']': '['};
+   for (const char of str) {
+      if (!characters[char]){
+         stack.push(char); 
+      } 
+      else if (stack.pop() !== characters[char]){
           return false;
-        }
-      }
+      } 
     }
     return stack.length === 0;
-  }
-  
+  };
+
   const validString = '({[]}{})';
   const inValidString = "}}{{";
   console.log(isValidParentheses(validString)); // Output: true

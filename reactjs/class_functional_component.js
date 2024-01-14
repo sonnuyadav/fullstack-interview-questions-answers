@@ -44,4 +44,4 @@ const FunctionalComponent = () => {
   );
 };
 
-export default FunctionalComponent;
+//export default FunctionalComponent;

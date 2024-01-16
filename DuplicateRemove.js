@@ -23,3 +23,6 @@ const filteredArray = arr.filter((value, index, array) =>
 );
 
 console.log(filteredArray); // [ 1, 3, 5, 6, 7, 8 ]
+
+//third way
+console.log([...new Set(arr)]);

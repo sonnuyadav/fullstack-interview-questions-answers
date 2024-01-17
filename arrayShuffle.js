@@ -1,16 +1,16 @@
 const shuffleArray = (arr) =>{
-    var totalShuffleArea = arr.length;
-
-    while(totalShuffleArea > 0){
-        totalShuffleArea --;
-        var indexToBeExchange = Math.floor(Math.random() * totalShuffleArea);
-        //swap value here
-        var tempNum = arr[totalShuffleArea];
-        arr[totalShuffleArea] = arr[indexToBeExchange];
-        arr[indexToBeExchange]; tempNum;
+    const newArray = arr.slice();
+  
+    for (let i = newArray.length - 1; i > 0; i--) {
+      const randomIndex = Math.floor(Math.random() * (i + 1));
+     [newArray[i], newArray[randomIndex]] = [newArray[randomIndex], newArray[i]];
     }
-
-    return arr;
-}
-
-console.log(shuffleArray([11,2,3,4,5,6])); //[ 11, 11, 2, 2, 11, 3 ]
+    return newArray;
+  }
+  
+  // now you can see example
+  const originalArray = [1, 2, 3, 4, 5];
+  const shuffledArray = shuffleArray(originalArray);
+  
+  console.log("Original Array:", originalArray);
+  console.log("Shuffled Array:", shuffledArray);

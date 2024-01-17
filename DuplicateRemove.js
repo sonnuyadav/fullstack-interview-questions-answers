@@ -5,7 +5,7 @@ const removeDuplicate = (arr) =>{
       outArr = [], 
       elm;
 
-  for(var i =0; i<arr.length; i++){
+  for(let i =0; i<arr.length; i++){
     elm = arr[i];
     if(!exists[elm]){
       outArr.push(elm);

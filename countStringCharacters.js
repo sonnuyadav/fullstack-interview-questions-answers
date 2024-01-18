@@ -10,12 +10,9 @@ const charOcc = (str) =>{
     return objOccrences;
 }
 const tempStr = 'Hello World';
-
 console.log(charOcc(tempStr));
 
-
 // using for of loop
-
 const string = "Hello World";
 const obj = {};
 for(let x of string){
@@ -27,3 +24,5 @@ for(let x of string){
 }
 
 console.log(obj);
+
+//Output: { H: 1, e: 1, l: 3, o: 2, ' ': 1, W: 1, r: 1, d: 1 }

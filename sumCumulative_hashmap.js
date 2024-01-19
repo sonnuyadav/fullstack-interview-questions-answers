@@ -10,6 +10,8 @@ const cumulativeSum = list => {
 }
 console.log(cumulativeSum(arr)); // Returns [1, 4, 9, 16]
 
+
+
 //Hashmap count index of elements 
 function twoSum(numbers, target) {
   for (let i = 0; i < numbers.length; i++) {

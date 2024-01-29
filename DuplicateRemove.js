@@ -26,3 +26,13 @@ console.log(filteredArray); // [ 1, 3, 5, 6, 7, 8 ]
 
 //third way
 console.log([...new Set(arr)]);
+
+// remove duplicate using .reduce method
+const array = [1, 2, 3, 4, 1, 2, 3];
+const uniqueArray = array.reduce((accumulator, currentValue) => {
+  if (!accumulator.includes(currentValue)) {
+    accumulator.push(currentValue);
+  }
+  return accumulator;
+}, []);
+console.log(uniqueArray);

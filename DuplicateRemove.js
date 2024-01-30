@@ -37,3 +37,12 @@ console.log(filteredArray); // [ 1, 3, 5, 6, 7, 8 ]
 
 //#4
 console.log([...new Set(arr)]);
+
+
+
+
+
+
+
+
+

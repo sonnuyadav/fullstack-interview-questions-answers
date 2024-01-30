@@ -9,4 +9,4 @@ const findVowels = str =>{
     return count;
 }
 
-console.log(findVowels("Sonu"));
+console.log(findVowels("Sonu")); // 2

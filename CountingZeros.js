@@ -7,4 +7,4 @@ function countZero(n){
     return count;
   }
 
-  console.log(countZero(20));
+  console.log(countZero(30)); // 3

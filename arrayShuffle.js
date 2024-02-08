@@ -14,3 +14,5 @@ const shuffleArray = (arr) =>{
   
   console.log("Original Array:", originalArray);
   console.log("Shuffled Array:", shuffledArray);
+//Original Array: [ 1, 2, 3, 4, 5 ]
+// Shuffled Array: [ 2, 4, 1, 5, 3 ]

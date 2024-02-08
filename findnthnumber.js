@@ -7,4 +7,4 @@ function nthlargest(array, highest) {
     else
         return(array[l-highest+1]);
 }
-console.log(nthlargest([23, 652, 43, 89, 23, 90, 99, 88], 2));
+console.log(nthlargest([23, 652, 43, 89, 23, 90, 99, 88], 2)); // 99

@@ -8,4 +8,4 @@ const findMissingNum = (arr) => {
   
   return false;
 }
-console.log(findMissingNum(arr));
+console.log(findMissingNum(arr)); //9

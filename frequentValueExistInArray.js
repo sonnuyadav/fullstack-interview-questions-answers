@@ -12,7 +12,7 @@ const getFrequentVal = (arr) => {
     return freq[accumulator] > freq[currentValue] ? accumulator : currentValue;
  });
  
-console.log(getValue);
+return getValue;
 }
 
-console.log(getFrequentVal(arr));
+console.log(getFrequentVal(arr)); // 5

@@ -17,4 +17,4 @@ for (var i=0;i<arr1.length;i++){
     }
 }
 
-console.log(mostFrequnetItem + " ( "+mostFrequnet+" times )");
+console.log(mostFrequnetItem + " ( "+ mostFrequnet +" times )"); //a ( 5 times )

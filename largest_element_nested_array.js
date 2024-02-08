@@ -26,5 +26,5 @@ function findLargestInNestedArray(arr) {
   ];
   
   const largestElement = findLargestInNestedArray(nestedArray);
-  console.log("The largest element in the nested array is:", largestElement);
+  console.log("The largest element in the nested array is:", largestElement); // 10
   

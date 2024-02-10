@@ -11,20 +11,23 @@ function getCarSeller(ms) {
     return new Promise(resolve => setTimeout(() => {
         console.log('got seller');
         resolve({name: 'manor'})
-    }, ms));
-}
+    }, ms));}
 
 
 async function sellCar() {
-    let carSeller = await getCarSeller(50);
-    let carBuyer = await getCarBuyer(50);
-    console.log(`selling car to ${carBuyer.name} from ${carSeller.name}`);
+    let carSellerPromise = getCarSeller(60);
+    let carBuyerPromise = getCarBuyer(50);
+
+    let buyer = await carBuyerPromise;
+    let seller = await carSellerPromise;
+
+    console.log(`selling car to ${buyer.name} from ${seller.name}`);
 }
 
 sellCar();
-//Output: 
+// Output:
 // inside getCarSeller
-// got seller
 // inside getCarBuyer
 // got buyer
+// got seller
 // selling car to niv from manor

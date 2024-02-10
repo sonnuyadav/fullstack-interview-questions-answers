@@ -8,3 +8,5 @@ function countZero(n){
   }
 
   console.log(countZero(30)); // 3
+
+  //means found first on 10, 20, 30 = 3 zero

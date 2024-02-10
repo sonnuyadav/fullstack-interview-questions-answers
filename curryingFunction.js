@@ -21,7 +21,7 @@ let sum = function (a){
 console.log(sum(1)(2)(3)(4)(5)(6)());  //21
 
 const sumArrow = a => b => b ? sumArrow(a + b): a;
-console.log(sumArrow(1)(2)(3)(4)(5)(6)());
+console.log(sumArrow(1)(2)(3)(4)(5)(6)()); //21
 
 
 

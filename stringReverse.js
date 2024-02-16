@@ -1,4 +1,5 @@
 //Q. reverse a string by words. Also show the reverse of each words in place
+//#1:
 const str = "Hello How Are You";
 //const str = "JavaScript is awesome";
 const reversedStr = str.split(" ")
@@ -8,7 +9,7 @@ const reversedStr = str.split(" ")
 
 console.log(reversedStr.join(" ")); //olleH woH erA uoY
 
-//Write a program to reverse a string
+//#2: Write a program to reverse a string
 
 let reversedString = "";
 for (let i = 0; i < str.length; i++) {

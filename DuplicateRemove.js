@@ -38,6 +38,20 @@ console.log(filteredArray); // [ 1, 3, 5, 6, 7, 8 ]
 //#4
 console.log([...new Set(arr)]);
 
+//#5 using for loop
+function removeDuplicate(arr) {
+  const uniqArr =[];
+
+  for(let i = 0; i < arr.length; i++) {
+      if(!uniqArr.includes(arr[i])) {
+          uniqArr.push(arr[i]);
+      }
+  }
+  return uniqArr;
+}
+console.log(removeDuplicate(array));
+
+
 
 
 

@@ -30,8 +30,16 @@ const flatArray1 = nestedArrays.flat(Infinity);
 console.log(flatArray1);
 // Output: [1, 2, 3, 4, 5, 6, 7, 8]
 //Using reduce method
- const flatArrayReduce = nestedArrays.reduce((accumulator, currentArray) => {
-  return accumulator.concat(Array.isArray(currentArray) ? flattenArray(currentArray) : currentArray);
-}, []);
+const flatArrayReduce = (arr) => {
+  return arr.reduce((acc, val) => {
+    // If the current value is an array, recursively flatten it
+    if (Array.isArray(val)) {
+      return acc.concat(flattenArray(val));
+    } else {
+      return acc.concat(val);
+    }
+  }, []);
+};
 
-console.log(flatArrayReduce);
+const flattenedArray = flattenArray(nestedArrays1);
+console.log(flattenedArray);

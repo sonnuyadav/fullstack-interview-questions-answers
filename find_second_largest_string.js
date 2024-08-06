@@ -6,7 +6,9 @@ function secondLargestString(arr) {
     let largest = '';
     let secondLargest = '';
 
-    for (const str of arr) {
+    // Iterate through the array
+    for (let i = 0; i < arr.length; i++) {
+        const str = arr[i];
         if (str.length > largest.length) {
             secondLargest = largest;
             largest = str;
@@ -19,6 +21,6 @@ function secondLargestString(arr) {
 }
 
 // Example usage:
-const strings = ["short", "mediumq", "longest", "tiny", "larger"];
+const strings = ["short", "medium", "longest", "tiny", "largest"];
 const secondLargest = secondLargestString(strings);
-console.log(secondLargest); // "larger"
+console.log(secondLargest); // "medium"
